@@ -148,6 +148,9 @@ faqItems.forEach(item => {
 // Contact Form Handling
 // ===================================
 
+// API Base URL — your FastAPI backend on Wasmer
+const API_BASE = 'https://aqibshabbirdev-fastapi-starter.wasmer.app';
+
 const contactForm = document.getElementById('contactForm');
 
 contactForm.addEventListener('submit', async (e) => {
@@ -162,18 +165,25 @@ contactForm.addEventListener('submit', async (e) => {
     submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
     submitBtn.disabled = true;
     
-    // Simulate form submission (replace with actual API call)
     try {
-        await new Promise(resolve => setTimeout(resolve, 2000));
+        const response = await fetch(`${API_BASE}/api/contact`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+        });
         
-        // Show success message
-        showNotification('Success! Your message has been sent. We\'ll get back to you soon.', 'success');
-        contactForm.reset();
+        const result = await response.json();
+        
+        if (response.ok && result.success) {
+            showNotification(result.message || 'Your message has been sent successfully!', 'success');
+            contactForm.reset();
+        } else {
+            showNotification(result.message || 'Something went wrong. Please try again.', 'error');
+        }
     } catch (error) {
-        // Show error message
-        showNotification('Oops! Something went wrong. Please try again.', 'error');
+        console.error('Contact form error:', error);
+        showNotification('Network error. Please check your connection and try again.', 'error');
     } finally {
-        // Reset button
         submitBtn.innerHTML = originalText;
         submitBtn.disabled = false;
     }
