@@ -2155,12 +2155,47 @@ img {
         }
 
     .hero-stats {
-        grid-template-columns: 1fr;
-        gap: 30px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .stat-item span {
+        font-size: 24px;
+    }
+
+    .stat-item i {
+        font-size: 22px;
+    }
+
+    .stat-item p {
+        font-size: 11px;
+    }
+
+    /* Disable heavy overlays on mobile for performance */
+    body::before,
+    body::after {
+        display: none !important;
+    }
+
+    .bg-particles,
+    .bg-shapes {
+        display: none !important;
+    }
+
+    /* Hide video on mobile — use static background for fast loading */
+    .hero-video {
+        display: none;
+    }
+
+    .hero-background {
+        background: linear-gradient(135deg, #0a1628 0%, #152238 50%, #0a1628 100%);
     }
 
     .hero {
         padding: 100px 0 60px;
+        min-height: auto;
         width: 100%;
         overflow: hidden;
     }
