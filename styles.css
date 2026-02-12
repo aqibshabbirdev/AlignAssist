@@ -2191,13 +2191,23 @@ img {
 
     .hero-background {
         background: linear-gradient(135deg, #0a1628 0%, #152238 50%, #0a1628 100%);
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
     }
 
     .hero {
-        padding: 100px 0 60px;
+        padding: 100px 0 80px;
         min-height: auto;
         width: 100%;
-        overflow: hidden;
+        overflow: visible;
+    }
+
+    .hero-content {
+        padding-bottom: 20px;
+    }
+
+    .scroll-indicator {
+        display: none;
     }
 
     .hero-cta {

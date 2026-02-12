@@ -1,30 +1,32 @@
 // ===================================
-// Hero Video Switching
+// Hero Video Switching (desktop only — skip on mobile for performance)
 // ===================================
 
 const heroVideo = document.getElementById('heroVideo');
 const videoSource = document.getElementById('videoSource');
-const videos = [
-    'medical billing we page video - 1.mp4',
-    'medical billing we page video - 2.mp4'
-];
-let currentVideoIndex = 0;
 
-// Function to play next video
-function playNextVideo() {
-    currentVideoIndex = (currentVideoIndex + 1) % videos.length;
-    videoSource.src = videos[currentVideoIndex];
-    heroVideo.load();
-    heroVideo.play();
+if (heroVideo && window.innerWidth > 768) {
+    const videos = [
+        'medical billing we page video - 1.mp4',
+        'medical billing we page video - 2.mp4'
+    ];
+    let currentVideoIndex = 0;
+
+    function playNextVideo() {
+        currentVideoIndex = (currentVideoIndex + 1) % videos.length;
+        videoSource.src = videos[currentVideoIndex];
+        heroVideo.load();
+        heroVideo.play();
+    }
+
+    heroVideo.addEventListener('ended', playNextVideo);
+    heroVideo.addEventListener('loadeddata', () => {
+        heroVideo.play();
+    });
+} else if (heroVideo) {
+    // On mobile, remove the video element entirely to save bandwidth
+    heroVideo.remove();
 }
-
-// Listen for video end event
-heroVideo.addEventListener('ended', playNextVideo);
-
-// Ensure video plays on page load
-heroVideo.addEventListener('loadeddata', () => {
-    heroVideo.play();
-});
 
 // Initialize AOS (Animate on Scroll)
 AOS.init({
