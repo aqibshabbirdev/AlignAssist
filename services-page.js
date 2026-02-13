@@ -249,5 +249,5 @@ console.log(`
 'color: #6b8e23; font-size: 14px; font-weight: bold;'
 );
 
-console.log('%cInterested in our services? Contact us at: Align Assist2025@gmail.com', 
+console.log('%cInterested in our services? Contact us at: AlignAssist2025@gmail.com', 
 'color: #8bc34a; font-size: 16px; font-weight: bold;');
