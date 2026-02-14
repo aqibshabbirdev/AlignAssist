@@ -7,7 +7,7 @@
     <meta name="description" content="Align Assist offers comprehensive medical billing, revenue cycle management, credentialing, and digital marketing services for healthcare providers.">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="icon" type="image/png" href="media/logo.png">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +21,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css?v=16.0">
 </head>
 <body>
     <!-- Animated Background Particles -->
@@ -79,11 +79,7 @@
                         <strong>+1 (281) 661-7667</strong>
                         <i class="fas fa-phone"></i>
                     </a>
-                    <a href="tel:+12816617667" class="top-bar-item">
-                        <span>Fax Now:</span>
-                        <strong>+1 (281) 661-7667</strong>
-                        <i class="fas fa-fax"></i>
-                    </a>
+                    
                 </div>
             </div>
         </div>
@@ -95,13 +91,13 @@
             <div class="nav-wrapper">
                 <div class="logo">
                     <a href="#home">
-                        <img src="logo.png" alt="Align Assist Logo" class="logo-img">
+                        <img src="media/logo.png" alt="Align Assist Logo" class="logo-img">
                     </a>
                 </div>
                 
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> <span>Home</span></a></li>
-                    <li><a href="#about" class="nav-link"><i class="fas fa-info-circle"></i> <span>About</span></a></li>
+                    <li><a href="about.html" class="nav-link"><i class="fas fa-info-circle"></i> <span>About</span></a></li>
                     <li class="dropdown">
                         <a href="#services" class="nav-link"><i class="fas fa-briefcase"></i> <span>Services</span> <i class="fas fa-chevron-down"></i></a>
                         <div class="dropdown-menu">
@@ -152,7 +148,7 @@
     <section class="hero" id="home">
         <div class="hero-background">
             <video autoplay muted playsinline loop preload="metadata" class="hero-video" id="heroVideo">
-                <source src="medical billing we page video - 1.mp4" type="video/mp4" id="videoSource">
+                <source src="media/medical billing we page video - 1.mp4" type="video/mp4" id="videoSource">
                 Your browser does not support the video tag.
             </video>
             <div class="hero-overlay"></div>
@@ -209,39 +205,92 @@
         <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <span class="section-badge">Who We Are</span>
-                <h2 class="section-title">Advanced Digital <span class="gradient-text">Solutions Provider</span></h2>
-                <p class="section-subtitle">
-                    We are a multinational company engaged in advanced digital solutions. We have served various clients from various countries. We deliver results that exceed our clients' expectations, and we are committed to providing the highest level of customer service.
-                </p>
-                <p class="section-subtitle" style="margin-top: 20px;">
-                    Our cutting-edge solutions are designed to make life easier, more efficient, and more productive.
-                </p>
+                <h2 class="section-title">Empowering <span class="gradient-text">Healthcare Excellence</span></h2>
             </div>
             
             <div class="about-content">
-                                <div class="about-cards">
-                    <div class="about-card" data-aos="fade-right">
-                        <div class="card-icon">
-                            <i class="fas fa-file-invoice-dollar"></i>
-                        </div>
-                        <h3>Medical Billing & RCM</h3>
-                        <p>We handle end-to-end revenue cycle management — from claim submissions and coding accuracy to denial management and A/R follow-ups — so providers get paid faster and focus on patient care.</p>
+                <!-- Mission & Vision Tabs -->
+                <div class="mission-vision-tabs" data-aos="fade-up">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" data-tab="mission">
+                            <i class="fas fa-bullseye"></i>
+                            <span>Our Mission</span>
+                        </button>
+                        <button class="tab-btn" data-tab="vision">
+                            <i class="fas fa-eye"></i>
+                            <span>Our Vision</span>
+                        </button>
                     </div>
                     
-                    <div class="about-card" data-aos="fade-up">
-                        <div class="card-icon">
-                            <i class="fas fa-certificate"></i>
+                    <div class="tab-content-container">
+                        <!-- Mission Tab -->
+                        <div class="tab-content active" id="mission">
+                            <div class="mission-vision-card">
+                                <div class="quote-icon">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <h3>Our Mission</h3>
+                                <p class="mission-text">
+                                    To simplify both financial and administrative challenges for healthcare providers through accurate billing solutions and reliable virtual assistant support — giving providers more time to focus on patient outcomes.
+                                </p>
+                                <div class="mission-features">
+                                    <div class="feature-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Accurate Billing Solutions</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Reliable Virtual Support</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Focus on Patient Outcomes</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <h3>Credentialing & Enrollment</h3>
-                        <p>Our credentialing specialists manage the entire provider enrollment process — verifying licenses, submitting payer applications, and tracking approvals to ensure uninterrupted network participation.</p>
-                    </div>
-                    
-                    <div class="about-card" data-aos="fade-left">
-                        <div class="card-icon">
-                            <i class="fas fa-headset"></i>
+                        
+                        <!-- Vision Tab -->
+                        <div class="tab-content" id="vision">
+                            <div class="mission-vision-card">
+                                <div class="quote-icon">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <h3>Our Vision</h3>
+                                <p class="vision-text">
+                                    "To restore the joy of practicing medicine by removing the administrative burden, ensuring every clinician we serve can dedicate 100% of their focus to patient outcomes while we handle the complexities of the business."
+                                </p>
+                                <div class="vision-highlights">
+                                    <div class="highlight-item">
+                                        <div class="highlight-icon">
+                                            <i class="fas fa-heart"></i>
+                                        </div>
+                                        <div class="highlight-text">
+                                            <h4>Restore Joy in Medicine</h4>
+                                            <p>Bringing passion back to healthcare practice</p>
+                                        </div>
+                                    </div>
+                                    <div class="highlight-item">
+                                        <div class="highlight-icon">
+                                            <i class="fas fa-hands-helping"></i>
+                                        </div>
+                                        <div class="highlight-text">
+                                            <h4>Remove Administrative Burden</h4>
+                                            <p>Handle all business complexities efficiently</p>
+                                        </div>
+                                    </div>
+                                    <div class="highlight-item">
+                                        <div class="highlight-icon">
+                                            <i class="fas fa-user-injured"></i>
+                                        </div>
+                                        <div class="highlight-text">
+                                            <h4>100% Patient Focus</h4>
+                                            <p>Enabling complete dedication to patient care</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <h3>Virtual Assistance & Scribing</h3>
-                        <p>From appointment scheduling and patient communication to real-time clinical documentation, our bilingual virtual assistants and scribes keep your practice running smoothly and efficiently.</p>
                     </div>
                 </div>
             </div>
@@ -438,7 +487,7 @@
     </section>
 
     <!-- EHR Software Section -->
-    <section class="ehr-software-section">
+    <section class="ehr-software-section section-padding">
         <div class="container">
             <div class="ehr-header" data-aos="fade-up">
                 <h2 class="ehr-title">EHR Softwares</h2>
@@ -449,100 +498,400 @@
             <div class="ehr-logos-container" data-aos="fade-up" data-aos-delay="100">
                 <!-- Center Logo -->
                 <div class="center-logo">
-                    <img src="logo.png" alt="Align Assist Logo" class="main-logo">
+                    <img src="media/logo.png" alt="Align Assist Logo" class="main-logo">
                 </div>
 
-                <!-- Left Side Logos -->
-                <div class="ehr-logo-item" style="--position: 1;">
+                <!-- Outer Circle - 12 EHR Systems -->
+                <!-- Position 1: 0° (Top) -->
+                <div class="ehr-logo-item outer" data-position="1">
                     <div class="logo-circle">
-                        <span>AdvancedMD</span>
+                        <img src="media/images/softwarelogos/AdvancedMD-logo.png" alt="AdvancedMD">
                     </div>
                 </div>
-                <div class="ehr-logo-item" style="--position: 2;">
+                
+                <!-- Position 2: 30° -->
+                <div class="ehr-logo-item outer" data-position="2">
                     <div class="logo-circle">
-                        <span>CareCloud</span>
+                        <img src="media/images/softwarelogos/CareCloud-logo.svg" alt="CareCloud">
                     </div>
                 </div>
-                <div class="ehr-logo-item" style="--position: 3;">
+                
+                <!-- Position 3: 60° -->
+                <div class="ehr-logo-item outer" data-position="3">
                     <div class="logo-circle">
-                        <span>Cerner</span>
+                        <img src="media/images/softwarelogos/Next Step Solutions-logo.svg" alt="Next Step Solutions">
                     </div>
                 </div>
-                <div class="ehr-logo-item" style="--position: 4;">
+                
+                <!-- Position 4: 90° (Right) -->
+                <div class="ehr-logo-item outer" data-position="4">
                     <div class="logo-circle">
-                        <span>CollaborateMD</span>
+                        <img src="media/images/softwarelogos/Prime Clinical Systems-logosvg.svg" alt="Prime Clinical Systems">
                     </div>
                 </div>
-                <div class="ehr-logo-item" style="--position: 5;">
+                
+                <!-- Position 5: 120° -->
+                <div class="ehr-logo-item outer" data-position="5">
                     <div class="logo-circle">
-                        <span>Comtron</span>
+                        <img src="media/images/softwarelogos/dr chrono-logo.svg" alt="DrChrono">
                     </div>
                 </div>
-                <div class="ehr-logo-item" style="--position: 6;">
+                
+                <!-- Position 6: 150° -->
+                <div class="ehr-logo-item outer" data-position="6">
                     <div class="logo-circle">
-                        <span>Dovetail</span>
+                        <img src="media/images/softwarelogos/e-MDs-logo.svg" alt="eMDs">
                     </div>
                 </div>
-                <div class="ehr-logo-item" style="--position: 7;">
+                
+                <!-- Position 7: 180° (Bottom) -->
+                <div class="ehr-logo-item outer" data-position="7">
                     <div class="logo-circle">
-                        <span>Epic</span>
+                        <img src="media/images/softwarelogos/webpt-logo.svg" alt="WebPT">
                     </div>
                 </div>
-                <div class="ehr-logo-item" style="--position: 8;">
+                
+                <!-- Position 8: 210° -->
+                <div class="ehr-logo-item outer" data-position="8">
                     <div class="logo-circle">
-                        <span>InSync</span>
+                        <img src="media/images/softwarelogos/Kareo-logo.png" alt="Kareo">
+                    </div>
+                </div>
+                
+                <!-- Position 9: 240° -->
+                <div class="ehr-logo-item outer" data-position="9">
+                    <div class="logo-circle">
+                        <img src="media/images/softwarelogos/CureMD-logo.png" alt="CureMD">
+                    </div>
+                </div>
+                
+                <!-- Position 10: 270° (Left) -->
+                <div class="ehr-logo-item outer" data-position="10">
+                    <div class="logo-circle">
+                        <img src="media/images/softwarelogos/CollaborateMD-logo.svg" alt="CollaborateMD">
+                    </div>
+                </div>
+                
+                <!-- Position 11: 300° -->
+                <div class="ehr-logo-item outer" data-position="11">
+                    <div class="logo-circle">
+                        <img src="media/images/softwarelogos/Comtron-logo.svg" alt="Comtron">
+                    </div>
+                </div>
+                
+                <!-- Position 12: 330° -->
+                <div class="ehr-logo-item outer" data-position="12">
+                    <div class="logo-circle">
+                        <img src="media/images/softwarelogos/Dovetail-logo.svg" alt="Dovetail">
                     </div>
                 </div>
 
-                <!-- Right Side Logos -->
-                <div class="ehr-logo-item" style="--position: 9;">
+                <!-- Inner Circle - 6 Tier-1 EHR Systems -->
+                <!-- Position 13: 0° (Top) -->
+                <div class="ehr-logo-item inner" data-position="13">
                     <div class="logo-circle">
-                        <span>NextStep</span>
+                        <img src="media/images/softwarelogos/epic-logo.png" alt="Epic">
                     </div>
                 </div>
-                <div class="ehr-logo-item" style="--position: 10;">
+                
+                <!-- Position 14: 60° -->
+                <div class="ehr-logo-item inner" data-position="14">
                     <div class="logo-circle">
-                        <span>Prime Clinical</span>
+                        <img src="media/images/softwarelogos/cerner-logo.png" alt="Cerner">
                     </div>
                 </div>
-                <div class="ehr-logo-item" style="--position: 11;">
+                
+                <!-- Position 15: 120° -->
+                <div class="ehr-logo-item inner" data-position="15">
                     <div class="logo-circle">
-                        <span>drchrono</span>
+                        <img src="media/images/softwarelogos/eClinicalWorks-logo.svg" alt="eClinicalWorks">
                     </div>
                 </div>
-                <div class="ehr-logo-item" style="--position: 12;">
+                
+                <!-- Position 16: 180° (Bottom) -->
+                <div class="ehr-logo-item inner" data-position="16">
                     <div class="logo-circle">
-                        <span>eMDs</span>
+                        <img src="media/images/softwarelogos/athenahealth-logo.svg" alt="athenahealth">
                     </div>
                 </div>
-                <div class="ehr-logo-item" style="--position: 13;">
+                
+                <!-- Position 17: 240° -->
+                <div class="ehr-logo-item inner" data-position="17">
                     <div class="logo-circle">
-                        <span>eClinicalWorks</span>
+                        <img src="media/images/softwarelogos/NextGenHealthcare-logo.png" alt="NextGen">
                     </div>
                 </div>
-                <div class="ehr-logo-item" style="--position: 14;">
+                
+                <!-- Position 18: 300° -->
+                <div class="ehr-logo-item inner" data-position="18">
                     <div class="logo-circle">
-                        <span>Kareo</span>
+                        <img src="media/images/softwarelogos/GreenwayHealth-logo.png" alt="Greenway">
                     </div>
                 </div>
-                <div class="ehr-logo-item" style="--position: 15;">
-                    <div class="logo-circle">
-                        <span>WebPT</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Medical Specialties Section -->
+    <section class="specialties-section section-padding">
+        <div class="container">
+            <div class="specialties-header" data-aos="fade-up">
+                <h2 class="specialties-title">EHR Flexible Medical Billing</h2>
+                <p class="specialties-subtitle">All Specialties</p>
+            </div>
+
+            <!-- Infinite Scroll Specialties -->
+            <div class="specialties-scroll-wrapper">
+                <div class="specialties-scroll-track">
+                    <!-- Set 1 -->
+                    <div class="specialty-item">
+                        <i class="fas fa-syringe"></i>
+                        <span>Anesthesia</span>
                     </div>
-                </div>
-                <div class="ehr-logo-item" style="--position: 16;">
-                    <div class="logo-circle">
-                        <span>athenahealth</span>
+                    <div class="specialty-item">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>Cardiology</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-bone"></i>
+                        <span>Chiropractic</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-flask"></i>
+                        <span>Clinical Lab</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-wheelchair"></i>
+                        <span>DME</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-tooth"></i>
+                        <span>Dental</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-hand-sparkles"></i>
+                        <span>Dermatology</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-dna"></i>
+                        <span>Endocrinology</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-clinic-medical"></i>
+                        <span>FQHC</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-user-md"></i>
+                        <span>Family Medicine</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-cut"></i>
+                        <span>General Surgery</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-female"></i>
+                        <span>Gynecology</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-tint"></i>
+                        <span>Hematology</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-stethoscope"></i>
+                        <span>Internal Medicine</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-brain"></i>
+                        <span>Mental Health</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-virus"></i>
+                        <span>Infectious Disease</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-home"></i>
+                        <span>Nursing Home</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-ribbon"></i>
+                        <span>Oncology</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-eye"></i>
+                        <span>Ophthalmology</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-x-ray"></i>
+                        <span>Orthopedics</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-pills"></i>
+                        <span>Pain Management</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-baby"></i>
+                        <span>Pediatrics</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-walking"></i>
+                        <span>Physical Therapy</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-shoe-prints"></i>
+                        <span>Podiatry</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-briefcase-medical"></i>
+                        <span>Primary Care</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-lungs"></i>
+                        <span>Pulmonology</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-radiation"></i>
+                        <span>Radiology</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-ambulance"></i>
+                        <span>Urgent Care</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-hard-hat"></i>
+                        <span>Workers Comp</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-band-aid"></i>
+                        <span>Wound Care</span>
+                    </div>
+
+                    <!-- Set 2 (duplicate for seamless loop) -->
+                    <div class="specialty-item">
+                        <i class="fas fa-syringe"></i>
+                        <span>Anesthesia</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>Cardiology</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-bone"></i>
+                        <span>Chiropractic</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-flask"></i>
+                        <span>Clinical Lab</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-wheelchair"></i>
+                        <span>DME</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-tooth"></i>
+                        <span>Dental</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-hand-sparkles"></i>
+                        <span>Dermatology</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-dna"></i>
+                        <span>Endocrinology</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-clinic-medical"></i>
+                        <span>FQHC</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-user-md"></i>
+                        <span>Family Medicine</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-cut"></i>
+                        <span>General Surgery</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-female"></i>
+                        <span>Gynecology</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-tint"></i>
+                        <span>Hematology</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-stethoscope"></i>
+                        <span>Internal Medicine</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-brain"></i>
+                        <span>Mental Health</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-virus"></i>
+                        <span>Infectious Disease</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-home"></i>
+                        <span>Nursing Home</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-ribbon"></i>
+                        <span>Oncology</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-eye"></i>
+                        <span>Ophthalmology</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-x-ray"></i>
+                        <span>Orthopedics</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-pills"></i>
+                        <span>Pain Management</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-baby"></i>
+                        <span>Pediatrics</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-walking"></i>
+                        <span>Physical Therapy</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-shoe-prints"></i>
+                        <span>Podiatry</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-briefcase-medical"></i>
+                        <span>Primary Care</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-lungs"></i>
+                        <span>Pulmonology</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-radiation"></i>
+                        <span>Radiology</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-ambulance"></i>
+                        <span>Urgent Care</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-hard-hat"></i>
+                        <span>Workers Comp</span>
+                    </div>
+                    <div class="specialty-item">
+                        <i class="fas fa-band-aid"></i>
+                        <span>Wound Care</span>
                     </div>
                 </div>
             </div>
 
-            <div class="ehr-cta" data-aos="fade-up" data-aos-delay="200">
-                <a href="#contact" class="btn btn-primary btn-lg">
-                    Explore Software
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
+            <!-- <div class="specialties-cta" data-aos="fade-up" data-aos-delay="200">
+                <a href="services.html" class="btn btn-specialty">All Specialties</a>
+            </div> -->
         </div>
     </section>
 
@@ -608,12 +957,10 @@
                 </p>
             </div>
             
-            <div class="team-grid">
+            <div class="team-grid team-grid-two">
                 <div class="team-member" data-aos="fade-up" data-aos-delay="100">
                     <div class="member-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-user"></i>
-                        </div>
+                        <img src="media/pojadp.jpeg" alt="Puja Charles - CEO">
                         <div class="member-social">
                             <a href="#"><i class="fab fa-linkedin-in"></i></a>
                             <a href="#"><i class="fab fa-twitter"></i></a>
@@ -621,9 +968,9 @@
                         </div>
                     </div>
                     <div class="member-info">
-                        <h3>John Anderson</h3>
+                        <h3>Puja Charles</h3>
                         <p class="member-role">Chief Executive Officer</p>
-                        <p class="member-bio">20+ years of experience leading technology companies and driving digital transformation initiatives across multiple industries.</p>
+                        <p class="member-bio">Puja Charles brings over 15 years of hands-on healthcare leadership experience, beginning her career on the clinical front lines and advancing to executive management across multi-site practices. With deep expertise in revenue cycle management, operational strategy, and specialty billing, she understands both the challenges providers face and the systems required for sustainable growth. As CEO, her vision is clear: <strong>where virtual support meets real success</strong> — delivering innovative, efficient, and results-driven solutions that empower healthcare providers to strengthen revenue, streamline operations, and focus on exceptional patient care.</p>
                     </div>
                 </div>
                 
@@ -639,27 +986,9 @@
                         </div>
                     </div>
                     <div class="member-info">
-                        <h3>Sarah Mitchell</h3>
-                        <p class="member-role">Chief Technology Officer</p>
-                        <p class="member-bio">Expert in cloud architecture and software development, leading our technical vision and innovation strategy.</p>
-                    </div>
-                </div>
-                
-                <div class="team-member" data-aos="fade-up" data-aos-delay="300">
-                    <div class="member-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="member-social">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    <div class="member-info">
-                        <h3>Michael Chen</h3>
-                        <p class="member-role">Chief Operations Officer</p>
-                        <p class="member-bio">Specializes in operational excellence and project delivery, ensuring seamless execution and client satisfaction.</p>
+                        <h3>Adnan</h3>
+                        <p class="member-role">Chief Financial Officer</p>
+                        <p class="member-bio">Adnan brings extensive expertise in financial strategy and operations, specializing in revenue optimization and fiscal management for healthcare organizations. With a proven track record in driving sustainable growth and profitability, he expertly navigates the complex financial landscape of medical billing, insurance reimbursements, and regulatory compliance. As CFO, Adnan ensures fiscal excellence across all business operations while implementing strategic financial planning that supports long-term growth and operational efficiency. His analytical approach and deep understanding of healthcare economics enable Align Assist to deliver exceptional financial performance and value to our clients.</p>
                     </div>
                 </div>
             </div>
@@ -993,7 +1322,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <img src="logo.png" alt="Align Assist Logo" class="logo-img">
+                        <img src="media/logo.png" alt="Align Assist Logo" class="logo-img">
                     </div>
                     <p>Where virtual support meets real success. Providing advanced solutions to help businesses and individuals succeed in today's ever-changing world.</p>
                     <div class="footer-social">
@@ -1057,6 +1386,76 @@
 
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="script.js"></script>
+    <script src="js/smooth-marquee.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+    // Specialties scroll - fixed pixel speed regardless of screen size
+    (function() {
+        const track = document.querySelector('.specialties-scroll-track');
+        if (!track) return;
+        const isMobile = window.innerWidth <= 768;
+        const SPEED = isMobile ? 100 : 170; // consistent smooth speed
+        let pos = 0;
+        let paused = false;
+        let lastTime = null;
+
+        // Only pause on hover (desktop), not touch
+        track.addEventListener('mouseenter', function(e) {
+            if (e.sourceCapabilities && e.sourceCapabilities.firesTouchEvents) return;
+            paused = true;
+        });
+        track.addEventListener('mouseleave', function() { paused = false; lastTime = null; });
+
+        // Use GPU-accelerated transform
+        track.style.willChange = 'transform';
+        track.style.backfaceVisibility = 'hidden';
+        track.style.webkitBackfaceVisibility = 'hidden';
+
+        function animate(timestamp) {
+            if (!paused) {
+                if (lastTime === null) lastTime = timestamp;
+                const delta = (timestamp - lastTime) / 1000;
+                lastTime = timestamp;
+                // Cap delta to prevent big jumps after tab switch
+                if (delta > 0.1) { lastTime = timestamp; requestAnimationFrame(animate); return; }
+                pos -= SPEED * delta;
+                const halfWidth = track.scrollWidth / 2;
+                if (Math.abs(pos) >= halfWidth) pos += halfWidth;
+                track.style.transform = 'translate3d(' + pos + 'px, 0, 0)';
+            } else {
+                lastTime = null;
+            }
+            requestAnimationFrame(animate);
+        }
+        requestAnimationFrame(animate);
+    })();
+    </script>
+    
+    <!-- EHR Logo Fallback Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const ehrImages = document.querySelectorAll('.logo-circle img');
+            
+            ehrImages.forEach(function(img) {
+                img.addEventListener('error', function() {
+                    // Hide the broken image
+                    this.style.display = 'none';
+                    
+                    // Create fallback text element
+                    const fallbackText = document.createElement('div');
+                    fallbackText.className = 'logo-fallback';
+                    fallbackText.textContent = this.alt;
+                    
+                    // Insert fallback text before the span
+                    this.parentElement.insertBefore(fallbackText, this.nextSibling);
+                });
+                
+                // Also check if image is already broken
+                if (!img.complete || img.naturalWidth === 0) {
+                    img.dispatchEvent(new Event('error'));
+                }
+            });
+        });
+    </script>
 </body>
 </html>
